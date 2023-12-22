@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: 30px; color: black; font-weight: bold">XO BANK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+
+
+<li class="nav-item">
+    <a href="http://127.0.0.1:8000" class="btn btn-light" style="padding-left: 20px; padding-right: 20px;">LOGOUT </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<img class="my_image my_image_padding" src="{% static 'img/mm.jpg' %}" alt="img" style="width: 100%;" height="570px;">
+{% endblock %}
